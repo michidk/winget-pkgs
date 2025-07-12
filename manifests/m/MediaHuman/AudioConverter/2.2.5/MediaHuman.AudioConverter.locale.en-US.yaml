@@ -1,4 +1,4 @@
-# Automatically updated by the winget bot at 2025/Jul/01
+# Created with YamlCreate.ps1 Dumplings Mod
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
 
 PackageIdentifier: MediaHuman.AudioConverter
@@ -24,12 +24,9 @@ Tags:
 - format
 - music
 ReleaseNotes: |-
-  - improvements for CUE splitting
-  - corrected selecting of bits for ALAC and FLAC
-  - corrected using of 'fade out/in' option together with 'limit duration'
-  - corrected 'silence trim' option together with normalization
-  - fixed writing of picture and id3v2 tags to WAV file
-  - fixed writing of TRACKTOTAL, DISCNUMBER and DISCTOTAL tags
+  - fixed hanging on 'Conversion finished'
+  - added option 'write tags' to disable tags writing
+  - minor improvements
 ReleaseNotesUrl: https://www.mediahuman.com/audio-converter/changelog.html
 Documentations:
 - DocumentLabel: Guides
