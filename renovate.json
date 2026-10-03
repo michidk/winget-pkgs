@@ -1,0 +1,16 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":enableVulnerabilityAlertsWithLabel('security')"
+  ],
+  "labels": ["no-stale", "bot"],
+  "packageRules": [
+    {
+      "matchManagers": ["github-actions"],
+      "groupName": "All GitHub Actions",
+      "minimumReleaseAge": "7 days",
+      "schedule": ["before 4am on Monday"]
+    }
+  ]
+}
